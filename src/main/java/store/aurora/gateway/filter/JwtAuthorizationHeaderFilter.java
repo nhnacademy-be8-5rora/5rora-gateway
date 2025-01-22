@@ -31,7 +31,7 @@ public class JwtAuthorizationHeaderFilter extends AbstractGatewayFilterFactory<J
     public static final String REFRESH_TOKEN = "refresh";
     public static final String USERNAME = "username";
 
-    private static final List<String> AUTHENTICATION_URI = List.of("/api/users/auth/me", "/api/books/search", "/api/auth/refresh"); //인증이 필요한 uri 추가 // todo pathvariable 있는 uri는??
+    private static final List<String> AUTHENTICATION_URI = List.of("/api/users/auth/me", "/api/books/search", "/api/auth/refresh","/api/books/my-like-books"); //인증이 필요한 uri 추가 // todo pathvariable 있는 uri는??
 
     public JwtAuthorizationHeaderFilter() {
         super(Config.class);
